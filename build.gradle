@@ -36,8 +36,12 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude module: 'junit' //spring-boot-starter-test 에 포함된 junit4 의존성 제거
     }
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation('org.junit.jupiter:junit-jupiter-api') {
+        exclude module: 'junit-platform-commons'    // 추가
+    }
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testRuntimeOnly("org.junit.platform:junit-platform-engine") //추가
+    testRuntimeOnly("org.junit.platform:junit-platform-commons")    //추가
 }
 
 test {
