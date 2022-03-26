@@ -33,6 +33,7 @@ dependencies {
 //    compile 'org.springframework.boot:spring-boot-starter-web' Gradle7 version에서는 compile->implementation
 //    testCompile 'org.springframework.boot:spring-boot-starter-test'
     implementation('org.springframework.boot:spring-boot-starter-web') //특정 버전을 명시하지 않아야 맨 위에 작성한 버전 따라감
+    implementation('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude module: 'junit' //spring-boot-starter-test 에 포함된 junit4 의존성 제거
     }
