@@ -1,50 +1,44 @@
-buildscript {   //추가
-    ext {   //ext: build.gradle 에서 사용하는 전역변수를 설정한다는 의미
+buildscript {
+    ext {
         springBootVersion = '2.1.7.RELEASE'
     }
-    repositories {  //각종 의존성(라이브러리)들을 어떤 원격 저장소에서 받을지 정함
+    repositories {
         mavenCentral()
     }
-    dependencies {  //프로젝트 개발에 필요한 의존성 선언
+    dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
         classpath("io.spring.gradle:dependency-management-plugin:1.0.4.RELEASE")
     }
 }
 
-//플러그인 의존성 적용. 아래 네 개는 자바와 스프링부트를 사용하기 위한 필수 플러그인
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management' //스프링부트의 의존성을 관리해주는 플러그인
-
-//plugins {
-//    id 'java'
-//}
+apply plugin: 'io.spring.dependency-management'
 
 group 'com.molly.book'
 version '1.0-SNAPSHOT'
-sourceCompatibility = 11    //추가
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-//    compile 'org.springframework.boot:spring-boot-starter-web' Gradle7 version에서는 compile->implementation
-//    testCompile 'org.springframework.boot:spring-boot-starter-test'
-    implementation('org.springframework.boot:spring-boot-starter-web') //특정 버전을 명시하지 않아야 맨 위에 작성한 버전 따라감
+
+    implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.projectlombok:lombok')
-    implementation('org.springframework.boot:spring-boot-stater-data-jpa')  //추가
-    implementation('com.h2database:h2:')    //추가
+    implementation('org.springframework.boot:spring-boot-stater-data-jpa')
+    implementation('com.h2database:h2:')
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
-        exclude module: 'junit' //spring-boot-starter-test 에 포함된 junit4 의존성 제거
+        exclude module: 'junit'
     }
     testImplementation('org.junit.jupiter:junit-jupiter-api') {
-        exclude module: 'junit-platform-commons'    // 추가
+        exclude module: 'junit-platform-commons'
     }
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-    testRuntimeOnly("org.junit.platform:junit-platform-engine") //추가
-    testRuntimeOnly("org.junit.platform:junit-platform-commons")    //추가
+    testRuntimeOnly("org.junit.platform:junit-platform-engine")
+    testRuntimeOnly("org.junit.platform:junit-platform-commons")
 }
 
 test {
