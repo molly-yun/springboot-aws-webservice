@@ -1,4 +1,4 @@
-package com.molly.book.springboot.web.dto;
+package com.molly.book.springboot.web.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

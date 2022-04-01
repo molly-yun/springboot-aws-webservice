@@ -1,6 +1,6 @@
-package com.molly.book.springboot.web;
+package com.molly.book.springboot.web.web;
 
-import com.molly.book.springboot.web.dto.HelloResponseDto;
+import com.molly.book.springboot.web.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

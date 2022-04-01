@@ -1,6 +1,6 @@
-package com.molly.book.springboot.web.dto;
+package com.molly.book.springboot.web.web.dto;
 
-import com.molly.book.springboot.domain.posts.Posts;
+import com.molly.book.springboot.web.domain.posts.Posts;
 import lombok.Getter;
 
 @Getter

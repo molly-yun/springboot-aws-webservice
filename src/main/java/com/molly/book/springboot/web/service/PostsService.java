@@ -1,10 +1,10 @@
-package com.molly.book.springboot.service;
+package com.molly.book.springboot.web.service;
 
-import com.molly.book.springboot.domain.posts.Posts;
-import com.molly.book.springboot.domain.posts.PostsRepository;
-import com.molly.book.springboot.web.dto.PostsResponseDto;
-import com.molly.book.springboot.web.dto.PostsSaveRequestDto;
-import com.molly.book.springboot.web.dto.PostsUpdateRequestDto;
+import com.molly.book.springboot.web.domain.posts.Posts;
+import com.molly.book.springboot.web.domain.posts.PostsRepository;
+import com.molly.book.springboot.web.web.dto.PostsResponseDto;
+import com.molly.book.springboot.web.web.dto.PostsSaveRequestDto;
+import com.molly.book.springboot.web.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

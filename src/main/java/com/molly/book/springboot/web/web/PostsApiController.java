@@ -1,9 +1,9 @@
-package com.molly.book.springboot.web;
+package com.molly.book.springboot.web.web;
 
-import com.molly.book.springboot.service.PostsService;
-import com.molly.book.springboot.web.dto.PostsResponseDto;
-import com.molly.book.springboot.web.dto.PostsSaveRequestDto;
-import com.molly.book.springboot.web.dto.PostsUpdateRequestDto;
+import com.molly.book.springboot.web.service.PostsService;
+import com.molly.book.springboot.web.web.dto.PostsResponseDto;
+import com.molly.book.springboot.web.web.dto.PostsSaveRequestDto;
+import com.molly.book.springboot.web.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

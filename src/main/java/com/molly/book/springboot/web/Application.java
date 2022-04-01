@@ -1,4 +1,4 @@
-package com.molly.book.springboot;
+package com.molly.book.springboot.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

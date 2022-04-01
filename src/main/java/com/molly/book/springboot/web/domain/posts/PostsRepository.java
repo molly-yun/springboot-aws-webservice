@@ -1,4 +1,4 @@
-package com.molly.book.springboot.domain.posts;
+package com.molly.book.springboot.web.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

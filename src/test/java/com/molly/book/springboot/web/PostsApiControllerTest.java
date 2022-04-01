@@ -1,9 +1,9 @@
-package com.molly.book.springboot;
+package com.molly.book.springboot.web;
 
-import com.molly.book.springboot.domain.posts.Posts;
-import com.molly.book.springboot.domain.posts.PostsRepository;
-import com.molly.book.springboot.web.dto.PostsSaveRequestDto;
-import com.molly.book.springboot.web.dto.PostsUpdateRequestDto;
+import com.molly.book.springboot.web.domain.posts.Posts;
+import com.molly.book.springboot.web.domain.posts.PostsRepository;
+import com.molly.book.springboot.web.web.dto.PostsSaveRequestDto;
+import com.molly.book.springboot.web.web.dto.PostsUpdateRequestDto;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
