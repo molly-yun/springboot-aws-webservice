@@ -37,6 +37,7 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter-api') {
         exclude module: 'junit-platform-commons'
     }
+    testImplementation('org.springframework.boot:spring-boot-starter-mustache')
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testRuntimeOnly("org.junit.platform:junit-platform-engine")
     testRuntimeOnly("org.junit.platform:junit-platform-commons")
