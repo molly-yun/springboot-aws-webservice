@@ -41,7 +41,7 @@ public class PostsService {
     public List<PostsListResponseDto> findAllDesc() {
         return postsRepository.findAllDesc().stream()
                 .map(PostsListResponseDto::new)
-                // = map(posts -> new PostsListResponseDto(posts))
+                //.map(posts -> new PostsListResponseDto(posts))
                 .collect(Collectors.toList());
     }
 }
