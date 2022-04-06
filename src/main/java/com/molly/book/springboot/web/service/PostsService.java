@@ -2,13 +2,14 @@ package com.molly.book.springboot.web.service;
 
 import com.molly.book.springboot.web.domain.posts.Posts;
 import com.molly.book.springboot.web.domain.posts.PostsRepository;
+import com.molly.book.springboot.web.web.dto.PostsListResponseDto;
 import com.molly.book.springboot.web.web.dto.PostsResponseDto;
 import com.molly.book.springboot.web.web.dto.PostsSaveRequestDto;
 import com.molly.book.springboot.web.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.stream.Collectors;
 
