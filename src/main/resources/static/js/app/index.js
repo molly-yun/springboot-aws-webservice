@@ -34,9 +34,11 @@ var main = {
             content: $('#content').val()
         };
 
+        var id = $('#id').val();
+
         $.ajax({
             type: 'PUT',
-            url: '/api/v1/posts/'+id,
+            url: '/api/v1/posts/'+id,   // 변수가 선언 및 초기화되어야 흰색으로 활성화된다.
             dataType: 'json',
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(data)
