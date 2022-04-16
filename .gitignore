@@ -5,3 +5,5 @@
 # 자동 생성 파일 ignore 처리
 .gradle
 .idea
+
+application-oauth.properties
