@@ -1,6 +1,5 @@
 package com.molly.book.springboot.web;
 
-import com.molly.book.springboot.web.web.HelloController;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.molly.book.springboot.web.web;
+package com.molly.book.springboot.web;
 
 import com.molly.book.springboot.web.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,7 +1,6 @@
-package com.molly.book.springboot.web.web;
+package com.molly.book.springboot.web;
 
 import com.molly.book.springboot.config.auth.dto.SessionUser;
-import com.molly.book.springboot.domain.user.User;
 import com.molly.book.springboot.web.service.PostsService;
 import com.molly.book.springboot.web.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +23,7 @@ public class IndexController {
         model.addAttribute("posts", postsService.findAllDesc());
         SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if (user != null) {
-            model.addAttribute("userName", user.getName());
+            model.addAttribute("loginUserName", user.getName());
         }
         return "index";
     }
